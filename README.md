@@ -1,8 +1,8 @@
 # Windows-Performance-Tweaks
 A small collection of scripts to make Windows 10 Faster and Lighter.
-The scripts disables and removes unnecessery features and services from Windows 10.
+The Scripts disables and removes unnecessery features and services from Windows 10.
 
-# How to use :
+# How to use:
 
     1. Right Click on the .bat files.
     2. Click Run as Administrator.
@@ -13,7 +13,7 @@ The scripts disables and removes unnecessery features and services from Windows 
     1. Replace the host file in your "system drive"/Windows/System32/drivers/etc/ 
        [Will try to make a automated way to replace the file in the future.]
 
-    1. Run the "Automatic Maaintenance.bat" periodically to maintain your Windows Installation.
+    1. Run the "Automatic Maintenance.bat" periodically to maintain your Windows Installation.
 
 
 # Attention:
