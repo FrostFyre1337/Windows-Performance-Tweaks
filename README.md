@@ -15,11 +15,9 @@ The Scripts disables and removes unnecessery features and services from Windows 
 
     1. Run the "Automatic Maintenance.bat" periodically to maintain your Windows Installation.
 
-
 # Attention:
 
 Don't use the "Disable Services.bat" if you intent to download apps from the Microsoft Store. It will prevent any download from Windows Store.
 
-
 # Credits:
-hosts.file and Windows 10 Debloater are collected from there respected creators StevenBlack and Sycnex.
+hosts.file and Windows 10 Debloater are collected from thier respected creators StevenBlack and Sycnex.
