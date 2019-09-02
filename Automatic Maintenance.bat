@@ -58,6 +58,10 @@ del /s /f /q "%USERPROFILE%\Cookies"\*.*
 rd /s /q "%USERPROFILE%\Cookies"    
 md "%USERPROFILE%\Cookies"
 
+:: Clears Google Chrome Cache.
+rd /s /q "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Cache"    
+md "%USERPROFILE%\AppData\Local\Google\Chrome\User Data\Default\Cache"
+
 :: Clears Windows DNS Resolver Cache.
 ipconfig /flushdns
 
