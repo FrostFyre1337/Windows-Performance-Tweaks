@@ -55,7 +55,7 @@ reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "S
 :: Disable Telemetry.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection" /v "AllowTelemetry" /t "REG_DWORD" /d "0" /f
 
-: Disable AntiSpyware.
+:: Disable AntiSpyware.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t "REG_DWORD" /d "1" /f
 
 reg add "HKCU\SOFTWARE\Microsoft\Siuf\Rules" /v "NumberOfSIUFInPeriod" /t "REG_DWORD" /d "0" /f
@@ -94,10 +94,16 @@ reg delete "HKCU\SOFTWARE\Microsoft\Siuf\Rules" /v "PeriodInNanoSeconds" /f
 :: Disable Dynamic Tick.
 bcdedit /set "disabledynamictick" "Yes"
 
+:: pool.ntp.org time servers.
+w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org"
+
 :: Disable Hibernation / Fast Startup.
 powercfg /H off
 
 :: Enables the Ultimate Performance Mode Power Option in Control Panel. You may cut this command if you don't intent to use the Ultimate Performance Feature. Add two colons in front.
 powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 
+:: Increase DNS Cache efficiency.
+reg add "HKLM\SYSTEM\CurrentControlSet\services\Dnscache\Parameters" /v "MaxNegativeCacheTtl" /t "REG_DWORD" /d "0" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\services\Dnscache\Parameters" /v "MaxCacheTtl" /t "REG_DWORD" /d "1" /f
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
