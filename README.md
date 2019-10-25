@@ -22,4 +22,4 @@ The Scripts disable and remove unnecessery features and services from Windows 10
 Don't use the "Disable Services.bat" if you intent to download apps from the Microsoft Store. It will prevent any download from Windows Store.
 
 # Credits:
-Windows 10 Debloater is collected from it's respected creator Sycnex (https://github.com/Sycnex/Windows10Debloater.git).
+Windows10Debloater is collected from it's respected creator Sycnex (https://github.com/Sycnex/Windows10Debloater.git).
