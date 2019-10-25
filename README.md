@@ -1,6 +1,6 @@
 # Windows-Performance-Tweaks
 A small collection of scripts to make Windows 10 Faster and Lighter.
-The Scripts disables and removes unnecessery features and services from Windows 10.
+The Scripts disable and remove unnecessery features and services from Windows 10.
 
 # How to use:
 
